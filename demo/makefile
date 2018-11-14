@@ -1,5 +1,5 @@
 gpmf-expose: GPMF_demo.o GPMF_parser.o GPMF_mp4reader.o GPMF_print.o
-		gcc -o gpmf-expose GPMF_demo.o GPMF_parser.o GPMF_mp4reader.o GPMF_print.o
+		gcc -o gpmf-expose -lm GPMF_demo.o GPMF_parser.o GPMF_mp4reader.o GPMF_print.o
 
 GPMF_demo.o : GPMF_demo.c ../GPMF_parser.h
 		gcc -c GPMF_demo.c
